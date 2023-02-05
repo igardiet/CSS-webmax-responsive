@@ -1,0 +1,492 @@
+html, body *{
+  margin: 0;
+  padding: 0;
+  font-family:"poppins",sans-serif ;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+
+.header¨{
+  height: 100vh;
+  width: 100%;
+  padding: 0 8%;
+  background: #fff;
+  position: relative;
+}
+
+nav{
+  position: absolute;
+  right: 0;
+  width: 100px;
+  height: 120px;
+  border: 3px;
+} 
+.logo{
+    width: 140px;
+  border-radius: 5px;
+}
+
+.nav-links li{
+  display: inline-block;
+  margin: 0 15px;
+}
+.nav-links li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 0;
+  position: relative;
+}
+.nav-links li a:after {
+  content: '';
+  background: #ff3d00;
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s ;
+  }
+  .nav-links li a:hover::after{
+    width: 100%;
+  
+  }
+.btn{
+  background: #ff3d00;
+  color: #;
+  padding: 10px 30px;
+  border-radius: 3px;
+  cursor: pointer;  
+}
+.content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 90%;
+  max-width: 900px;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: #fff;
+  padding-top: 50px;
+  
+}
+.content h1{
+  font-size: 65px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.content form{
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  
+}
+.content form input{
+  flex:1;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  font-size: 18px;
+}
+.content form button{
+  background: #ff3d00;
+  color: #fff;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.category-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-trim: 40px;
+}
+.category{
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 61, 0, 0.15);
+  margin: 0 10px;
+  font-size: 12px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction:column ;
+  }
+.category img{
+  width: 25px;
+  margin-bottom:5px;
+}
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+@media(min-aspect-ratio: 16/9){
+  .back-video{
+  width: 100%;
+  height: auto;
+  }
+}
+@media(max-aspect-ratio: 16/9){
+  .back-video{
+  width: auto;
+  height:  100%;
+  }
+}
+.sign-up {
+  text-align: center;
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+  display: block;
+  
+}
+
+.contact {
+  text-align: center;
+  color: whitesmoke;
+  display: block;
+}
+
+.contact-us {
+  text-align: center;
+  color: whitesmoke;
+  font-family: Courier, monospace;
+  display: block;
+  background: #ff3d00;
+  padding: 10px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 5px 0;
+  position: relative;
+  list-style: none;
+}
+  
+.find-course {
+  cursor: pointer;
+}
+
+.body{
+  display: flex;
+  justify-content: end;
+  min-height: 100vh;
+  background: black;
+  
+}
+
+.footer {
+  text-align: center;
+  display: inline-flexbox;
+  color: whitesmoke;
+  margin-top: 35%;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: center;
+  
+}
+
+.logos {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+}
+
+.logo1 {
+  display: inline-block;
+  background-color: whitesmoke;
+}
+
+.logo2 {
+  display: inline-block;
+  background-color: whitesmoke;
+}
+
+.logo3 {
+  display: inline-block;
+  background-color: whitesmoke;
+}
+
+.logo4 {
+  display: inline-block;
+  background-color: whitesmoke;
+}
+
+.logo5 {
+  display: inline-block;
+  background-color: whitesmoke;
+}
+
+.footer-text {
+  text-align: center;
+}
+
+.submit-cu {
+  cursor: pointer;
+  border-radius: 10%;
+  border: 3px solid whitesmoke;
+  box-shadow: 50rem lightblue;
+  transition: ease-in-out 1s;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: whitesmoke;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: whitesmoke;
+  }
+
+  .fa-google {
+    background: whitesmoke;
+    color: rgba(red, green, yellow, alpha);
+  }
+
+  .fa-linkedin {
+    background: lightskyblue;
+    color: whitesmoke;
+  }
+
+  .fa-youtube {
+    background: crimson;
+    color: whitesmoke;
+  }
+
+.category:hover {
+    opacity: 0.7;
+}
+
+.logo:hover {
+    opacity: 0.7;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.find-course:hover {
+    opacity: 0.7;
+}
+
+.contact-blanks input {
+    flex:1;
+    border: 5px solid gold;
+    outline: none;
+    padding: 0 20px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+
+.contact-blanks textarea {
+    flex:1;
+    border: 5px solid gold;
+    outline: none;
+    padding: 0 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.signup-blanks input {
+    flex:1;
+    border: 5px solid gold;
+    outline: none;
+    padding: 0 20px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+
+.webmax-logo {
+    width: 140px;
+    border-radius: 5px;
+    border: 3px solid gold;
+}
+
+.webmax-logo:hover {
+  opacity: 0.7;
+}
+
+.submit-contact-signup {
+  cursor: pointer;
+  background: #ff3d00;
+  color: whitesmoke;
+  padding: 10px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  list-style: none;
+}
+.submit-contact-signup {
+    flex:1;
+    border: 5px solid #ff3d00;
+    outline: none;
+    padding: 0 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.submit-contact-signup:hover {
+  opacity: 0.7;
+}
+
+.r1 {
+  font-size: 20px;
+}
+
+.r2 {
+  font-size: 10px;
+}
+
+@media screen and (min-width:1024px) {
+  .btn {
+    font-size: 250%;
+  }
+  .btn {
+    background: purple;
+    font-size: 75%;
+  }
+  .nav-links li a {
+    color: gold;
+  }
+  .content form button {
+    background: purple;
+    color: gold;
+  }
+  .content form input {
+    padding: 1%;
+  }
+  footer {
+    position: absolute;
+    width: 100%;
+    bottom: 2%;
+    font-size: 75%;
+  }
+  .footer-text {
+    color: gold;
+  }
+  h1, h3 {
+    color: gold;
+  }
+  .r1, .r2 {
+    color: gold;
+  }
+  .category-list {
+    display: none;
+  }
+  .logos {
+    display: none;
+  }
+}
+
+@media screen and (min-width:813px) and (max-width:1023px) {
+  .nav-links, .btn {
+    display: none;
+  }
+  .nav-links li a {
+    color: gold;
+  }
+  .content form button {
+    background: purple;
+    color: gold;
+  }
+  .content form input {
+    padding: 1%;
+  }
+  footer {
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    font-size: 75%;
+  }
+  .footer-text {
+    display: none;
+  }
+  h1, h3 {
+    display: none;
+  }
+  .r1, .r2 {
+    display: none;
+  }
+  .category-list {
+    
+  }
+  .logos {
+    
+  }
+}
+
+@media screen and (max-width:812px) {
+  .btn {
+    background: purple;
+    font-size: 75%;
+  }
+  .nav-links li a {
+    color: gold;
+  }
+  .content form button {
+    background: purple;
+    color: gold;
+  }
+  .content form input {
+    padding: 1%;
+  }
+  footer {
+    position: absolute;
+    width: 100%;
+    bottom: 1%;
+    font-size: 115%;
+  }
+  .footer-text {
+    color: purple;
+  }
+  h1, h3 {
+    color: purple;
+  }
+  .r1, .r2 {
+    color: purple;
+  }
+  body {
+    background: greenyellow;
+  }
+  .back-video {
+    display: none;
+    z-index: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  * {
+    font-size: 100%;
+  }
+}
+
+@media print and (max-width: 8000px) {
+  .category-list, .logo, .logos, .btn, .content form input, .content form button, .nav-links li a, .webmax-logo, .back-video {
+    display: none;
+    visibility: hidden;
+  }
+}

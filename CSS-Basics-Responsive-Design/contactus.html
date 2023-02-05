@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WebMax, learn to code with one click</title>
+    
+  </head>
+  <body class="contact">
+    <div>
+      <header>
+        <video autoplay loop class="back-video" muted><source src="media/video.mp4" type="video/mp4"></video>
+          <a href="index.html"><img src="media/Logo.png" alt="webmax-logo" class="webmax-logo"></a><br>
+          <h2>Contact us</h2><br>
+      </header>
+      <form class="contact-blanks" action="index.html">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Your first name" required><br><br>
+        <label for="last-name">Last name</label><br>
+        <input type="text" id="last-name" name="last-name" placeholder="Your last name" required><br><br>
+        <label for="tel">Phone</label><br>
+        <input type="tel" id="tel" name="phone-number" placeholder="xxx-xx-xx-xx" pattern="[0-9]{9}" required><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Your email" required><br><br>
+        <label for="address">Address</label><br>
+        <input type="text" id="address" name="address" placeholder="Your address" required><br><br>
+        <label for="id-code">DNI/NIF/NIE</label><br>
+        <input type="text" id="id-code" name="id-code" placeholder="Your Id number" pattern="[0-9]{8}[A-Za-z]{1}" required><br>            <br>
+        <label for="text">Aditional info</label><br><br>
+        <textarea name="message" id="text" rows="4" cols="30" placeholder="(Optional)"></textarea><br><br>
+        <button class="submit-contact-signup" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
